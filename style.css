@@ -8,9 +8,10 @@
     background: transparent;
     background-color: #666;
   
-    font-family: inherit;
+    font-family: 'Roboto', sans-serif;
     
     text-decoration: none;
+    position: relative;
   }
   
   ol, ul, li {
@@ -40,4 +41,159 @@
     appearance: none !important;
     -webkit-appearance: none !important;
     border-radius: 0
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+  }
+
+  header .material-icons{
+    padding: 22px;
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+  }
+
+  header button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #666;
+    color: #fff;
+  }
+
+  header button .material-icons{
+    background-color: #666;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .container{
+    top: 80px;
+    max-width: 1200px;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding: auto;
+  }
+
+  .card{
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #666;
+  }
+
+  .money{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #fff;
+    color: #666;
+  }
+
+  .sub{
+    width: 160px;
+    height: 160px;
+    font-size: 80px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 50%;
+    padding-left:55px;
+    padding-top: 35px;
+  }
+
+  .card button{
+    position: absolute;
+    bottom: -25px;
+    width: 160px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #666;
+    border-radius: 30px;
+  }
+
+  .card button p{
+    background-color: #fff;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    color: #666;
+    width: fit-content;
+  }
+
+  .card button div{
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+  }
+
+  button:hover{
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  button:hover p{
+    background-color: #666;
+    color: #fff;
+  }
+
+  button:hover div{
+    background-color: #666;
+    color: #fff;
   }
